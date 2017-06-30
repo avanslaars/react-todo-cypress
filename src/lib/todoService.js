@@ -1,4 +1,5 @@
-const baseUrl = 'http://localhost:8080/todos'
+const baseUrl = process.env.REACT_APP_API_PATH
+console.log(baseUrl)
 
 export const loadTodos = () => {
   return fetch(baseUrl)

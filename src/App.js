@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import logo from './logo.svg';
 import './App.css';
 import {TodoForm, TodoList, Footer} from './components/todo'
@@ -14,7 +15,7 @@ class App extends Component {
   }
 
   static contextTypes = {
-    route: React.PropTypes.string
+    route: PropTypes.string
   }
 
   componentDidMount() {

@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 
 export class Link extends Component {
   static contextTypes = {
-    route: React.PropTypes.string,
-    linkHandler: React.PropTypes.func
+    route: PropTypes.string,
+    linkHandler: PropTypes.func
   }
 
   handleClick = (evt) => {
@@ -13,10 +14,10 @@ export class Link extends Component {
 
   render() {
     const activeClass = this.context.route === this.props.to ? 'active' : ''
-    return <a href="#" className={activeClass} onClick={this.handleClick}>{this.props.children}</a>
+    return <a href="/" className={activeClass} onClick={this.handleClick}>{this.props.children}</a>
   }
 }
 
 Link.propTypes = {
-  to: React.PropTypes.string.isRequired
+  to: PropTypes.string.isRequired
 }

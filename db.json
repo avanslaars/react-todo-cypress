@@ -2,17 +2,12 @@
   "todos": [
     {
       "id": 1,
-      "name": "Setup Server",
-      "isComplete": true
+      "name": "Test Todo 1",
+      "isComplete": false
     },
     {
       "id": 2,
-      "name": "Start Server",
-      "isComplete": true
-    },
-    {
-      "id": 3,
-      "name": "Connect to Server",
+      "name": "Test Todo 2",
       "isComplete": true
     },
     {
